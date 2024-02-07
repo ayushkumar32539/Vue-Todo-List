@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="main_container">
     <h1>To-Do List</h1>
     <div class="container">
       <div class="input-container">
@@ -39,6 +40,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -115,6 +117,13 @@ export default {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 50px;
+}
+
+.main_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -229,9 +238,11 @@ ul {
   color: #fff;
 }
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .tasks-container {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
-} */
+}
 </style>
